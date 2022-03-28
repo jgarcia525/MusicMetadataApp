@@ -5,6 +5,15 @@ This website shows some of my favorite songs gathered from the spotify API throu
 
 Regarding the requirements of the project, I added on album cover url photos to the tracks to make the UI more interesting.
 
+## Updated track model
+Track
+  - ID
+  - Title
+  - Artist
+  - Genre
+  - Duration
+  - AlbumCoverUrl
+
 ## Building and Running
 
 ### Backend server
