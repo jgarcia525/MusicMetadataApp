@@ -7,11 +7,12 @@ const typeDefs = gql`
     artist: String!
     genre: String!
     duration: Int!
+    albumCoverUrl: String!
   }
 
   type Query {
     getAllTracks: [Track]
-    getTrack(id: ID): Track
+    getTrack(id: ID!): Track
   }
 
   input TrackInput {
@@ -19,12 +20,13 @@ const typeDefs = gql`
     artist: String!
     genre: String!
     duration: Int!
+    albumCoverUrl: String!
   }
 
   type Mutation {
     createTrack(track: TrackInput): Track
-    deleteTrack(id: ID): String
-    updateTrack(id: ID, track: TrackInput): Track
+    deleteTrack(id: ID!): String
+    updateTrack(id: ID!, track: TrackInput!): Track
   }
 `;
 

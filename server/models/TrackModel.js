@@ -17,6 +17,10 @@ const TrackSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  albumCoverUrl: {
+    type: String,
+    required: true,
+  },
 });
 
 const Track = mongoose.model('track', TrackSchema);
